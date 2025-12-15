@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/clientes")
 @RequiredArgsConstructor
-public class Client {
+public class ClientController {
 
     private final ClientService clientService;
 
