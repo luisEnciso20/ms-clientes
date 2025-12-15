@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${AIVEN_URL}
+    username: ${AIVEN_PASSWORD}
+    password: ${AIVEN_USERNAME}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: false
+
+config:
+  secureapi:
+    user: ${SECAPI_USERNAME}
+    pass: ${SECAPI_PASS}
+    secret_key: ${SECAPI_GENTOKEN}
